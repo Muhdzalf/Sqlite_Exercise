@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambah_data">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:text="@string/upd_data"
+                android:textColor="#aa55ff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/upd_Nama"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/nama"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/upd_Nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:hint="@string/h_nama"
+                android:maxLines="2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="27dp"
+                android:ems="12"/>
+
+            <TextView
+                android:id="@+id/nomor_tlp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/no_tlp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/upd_tlp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upd_Nama"
+                android:hint="@string/h_tlp"
+                android:layout_alignLeft="@id/upd_Nama"
+                android:layout_marginRight="-50dp"
+                android:ems="12" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomor_tlp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="12dp"
+                android:text="@string/email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/upd_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upd_tlp"
+                android:hint="@string/h_email"
+                android:layout_alignLeft="@id/upd_Nama"
+                android:layout_marginRight="-50dp"
+                android:ems="12" />
+
+            <TextView
+                android:id="@+id/nomor_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/alamat"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/upd_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upd_email"
+                android:hint="@string/h_alamat"
+                android:layout_alignLeft="@id/upd_Nama"
+                android:layout_marginRight="-50dp"
+                android:ems="12" />
+            <Button
+                android:id="@+id/btn_batal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/upd_alamat"
+                android:text="@string/btn_batal" />
+
+            <Button
+                android:id="@+id/btn_ubah"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_batal"
+                android:layout_below="@id/upd_alamat"
+                android:text="@string/btn_ubah"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="650dp"
+                android:layout_marginLeft="335dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_person_add_white"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="normal" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
